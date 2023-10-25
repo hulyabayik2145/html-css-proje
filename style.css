@@ -1,0 +1,175 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: url(/ocean-3605547_1280.jpg);
+    height: 100%;
+    background-repeat: no-repeat;/*resmin arka planda tekrarını önlemek için*/
+    background-size: cover;
+    background-attachment: fixed;/*arka plan resmi için düzenleme*/
+}
+/*header css*/
+.header{
+    background-color: rgba(97,95,95,0.581);
+    display: flex;
+    height: 110px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top:0;
+
+}
+
+.header .title h1 {
+    color:aquamarine;
+}
+.header .title h1 span {
+    color:rgb(173, 155, 155);
+}
+.header .nav ul li {
+    list-style-type: none;
+}
+.header .nav ul li a {
+    text-decoration: none;
+    margin-right: 10px;
+    color:rgba(0,255,255,0.572);
+    font-size: 20px;
+}
+.header .nav ul li a:hover{
+    color:wheat;
+    cursor:pointer;
+}
+/*header bitiş*/
+/*ana içerik başlangıc*/
+.main{
+    height: 50vh;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.main .info{
+    height: 100%;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.main .info h1{
+    color:rgb(207,100,23);
+}
+.main .info p {
+    color:white;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.main .info p b{
+    color:green;
+    text-transform: capitalize;
+}
+
+.main .info button{
+    border:none;
+    background-color: brown;
+    color:wheat;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.main .info button:hover{
+    cursor:pointer;
+    background-color: rgba(165,42,42,0.654);
+}
+
+/*ana içerik bitiş*/
+/*table başlangıç*/
+.table-container {
+   
+    width: 80%;
+    margin:20px auto;
+}
+.table-container table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+th,
+td {
+    padding: 8px;
+    border: 1px solid rgb(223, 125, 125);
+    color:wheat;
+}
+th {
+    background-color: rgb(100,103,103);
+   color:wheat
+}
+
+/*table alanı bitiş*/
+/*form alanı css*/
+
+.form-container{
+    width: 80%;
+    margin:20px auto;
+    padding: 20px ;
+    border:1px solid rgb(223, 180, 180);
+    border-radius: 5px;
+    margin-top:100px;
+    background-color:#d4cbcb ;
+}
+label{
+    font-weight: bold;
+    
+    
+}
+#ad,
+#email,
+textarea{
+    
+    width:98% ;
+    padding: 10px;
+    border:3px solid rgb(24, 17, 17);
+    border-radius: 5px;
+
+}
+.btn{
+    background-color: rgb(18,40,55);
+    color:white;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+
+}
+
+.btn:hover{
+    background-color: blue;
+}
+/*form alanı css bitiş*/
+
+/*footer*/
+.footer {
+    background-color: #333;
+    color:red;
+    height: 110px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+/*media sorgusu*/
+@media (max-width: 800px){
+    .header .nav {
+        display: none;
+    }
+
+}
